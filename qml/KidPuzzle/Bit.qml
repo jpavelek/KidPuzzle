@@ -20,7 +20,10 @@ Image {
         }
     }
 
-    Component.onCompleted: { width = dockW; height = dockH; x = dockX; y = dockY }
+    Component.onCompleted: {
+        width = dockW; height = dockH; x = dockX; y = dockY
+        UI.addBit()
+    }
     Behavior on x { PropertyAnimation { duration: 250; easing.type: Easing.InOutQuad } }
     Behavior on y { PropertyAnimation { duration: 250; easing.type: Easing.InOutQuad } }
     Behavior on width { PropertyAnimation { duration: 250; easing.type: Easing.InOutQuad } }
@@ -36,9 +39,13 @@ Image {
         onReleased: {
             if (closeEnough(aBit.x, aBit.y, aBit.boardX, aBit.boardY)) {
                 free = false
+                UI.bitDone()
                 aBit.x = boardX
                 aBit.y = boardY
                 drag.target = undefined
+                if (UI.finished()) {
+                    console.log("FINISHED - bring on the baloons")
+                }
             } else {
                 aBit.width = dockW
                 aBit.height = dockH

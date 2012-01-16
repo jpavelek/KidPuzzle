@@ -1,5 +1,27 @@
 .pragma library
 
+var bits = 0
+
+function init() {
+    bits = 0
+}
+
+function addBit() {
+    bits++
+}
+
+function bitDone() {
+    bits--
+}
+
+function finished() {
+    if (bits === 0) {
+        return true
+    } else {
+        return false
+    }
+}
+
 //Common
 var screenWidth = 854;
 var screenHeight = 480;

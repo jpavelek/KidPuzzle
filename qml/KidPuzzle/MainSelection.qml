@@ -86,7 +86,9 @@ Rectangle {
         anchors { left: parent.left; right: parent.right; bottom: parent.bottom }
     }
 
-    Component.onCompleted: PropertyAnimation { target: mainPage; property: "opacity"; to: 1; duration: 300; easing.type: Easing.InOutQuad  }
+    Behavior on opacity {  PropertyAnimation { target: mainPage; property: "opacity"; duration: 300; easing.type: Easing.InOutQuad  } }
+
+    Component.onCompleted: { UI.init(); opacity = 1 }
 
 }
 
