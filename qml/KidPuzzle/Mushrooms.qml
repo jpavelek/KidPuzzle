@@ -7,6 +7,7 @@ Image {
     height: UI.screenHeight
     source: "mushrooms.png"
     opacity: 0.0
+    property bool gameover: false
 
     Bit {
         source: "mushrooms_star.png"
@@ -32,6 +33,26 @@ Image {
         MouseArea {
             anchors.fill: parent
             onClicked: { tileLoader.source = "MainSelection.qml" }
+        }
+    }
+
+    onGameoverChanged: {
+        loader.sourceComponent = baloonPopper
+    }
+
+    Loader {
+        id: loader
+    }
+
+    Component {
+        id: baloonPopper
+        Repeater {
+            model: 15
+            delegate: Baloon {
+                x: Math.random()*UI.screenWidth
+                y: UI.screenHeight
+                timeout: Math.random()*10000
+            }
         }
     }
 

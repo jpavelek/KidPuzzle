@@ -45,6 +45,7 @@ Image {
                 drag.target = undefined
                 if (UI.finished()) {
                     console.log("FINISHED - bring on the baloons")
+                    gameover = true
                 }
             } else {
                 aBit.width = dockW

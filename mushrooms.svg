@@ -219,17 +219,21 @@
        id="path4058"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccccccc" />
-    <path
-       style="color:#000000;fill:#fc0000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.9646073;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="m 546.22957,1322.4243 c 45.56079,0 82.2397,28.8536 82.2397,99.655 0,70.8013 -31.69469,146.705 -77.25548,146.705 -45.56079,0 -87.22391,-75.9037 -87.22391,-146.705 0,-70.8014 36.6789,-99.655 82.23969,-99.655 z"
-       id="rect3132"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="scscs" />
-    <path
-       sodipodi:nodetypes="scscs"
-       inkscape:connector-curvature="0"
-       id="path3135"
-       d="m 546.22957,1322.4243 c 45.56079,0 82.2397,28.8536 82.2397,99.655 0,70.8013 -31.69469,146.705 -77.25548,146.705 -45.56079,0 -87.22391,-75.9037 -87.22391,-146.705 0,-70.8014 36.6789,-99.655 82.23969,-99.655 z"
-       style="color:#000000;fill:url(#radialGradient3911);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.96460729999999995;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;opacity:0.48148148000000002" />
+    <g
+       id="g3973"
+       style="opacity:0.69547325">
+      <path
+         sodipodi:nodetypes="scscs"
+         inkscape:connector-curvature="0"
+         id="rect3132"
+         d="m 546.22957,1322.4243 c 45.56079,0 82.2397,28.8536 82.2397,99.655 0,70.8013 -31.69469,146.705 -77.25548,146.705 -45.56079,0 -87.22391,-75.9037 -87.22391,-146.705 0,-70.8014 36.6789,-99.655 82.23969,-99.655 z"
+         style="color:#000000;fill:#fc0000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.96460729999999995;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <path
+         style="color:#000000;fill:url(#radialGradient3911);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.96460729999999995;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;opacity:0.48148148000000002"
+         d="m 546.22957,1322.4243 c 45.56079,0 82.2397,28.8536 82.2397,99.655 0,70.8013 -31.69469,146.705 -77.25548,146.705 -45.56079,0 -87.22391,-75.9037 -87.22391,-146.705 0,-70.8014 36.6789,-99.655 82.23969,-99.655 z"
+         id="path3135"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="scscs" />
+    </g>
   </g>
 </svg>
