@@ -35,3 +35,8 @@ var delegateHeigh = 180;
 //Game page
 var pickerBarWidth = 128;
 var threshold = 100;
+var bubbleUpdateInterval = 20;
+var nrBaloons = 15;
+var seedTime = 10000;
+var nrColors = 3;
+var baloonColors = ["mushrooms_baloon_red.png", "mushrooms_baloon_green.png", "mushrooms_baloon_yellow.png"];

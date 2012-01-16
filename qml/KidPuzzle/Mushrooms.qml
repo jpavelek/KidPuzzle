@@ -47,11 +47,12 @@ Image {
     Component {
         id: baloonPopper
         Repeater {
-            model: 15
+            model: UI.nrBaloons
             delegate: Baloon {
-                x: Math.random()*UI.screenWidth
+                x: Math.floor(Math.random()*UI.screenWidth*0.8)
                 y: UI.screenHeight
-                timeout: Math.random()*10000
+                source: UI.baloonColors[Math.floor(Math.random()*UI.nrColors)]
+                timeout: Math.floor(Math.random()*UI.seedTime)
             }
         }
     }
