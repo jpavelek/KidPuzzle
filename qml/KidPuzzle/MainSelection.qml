@@ -12,16 +12,24 @@ Rectangle {
     Component {
         id: tilesGridDelegate
         Image {
+            id: thumbnailImage
             width: UI.delegateWidth
             height: UI.delegateHeigh
             source: thumbnail
             MouseArea {
-                anchors.fill: parent
+                anchors.fill: (boardEnabled) ? parent : undefined
                 onClicked: {
                     gridTiles.currentIndex = index
                     tileLoader.source = tileComponent
                     console.log("Start " + tileComponent)
                 }
+            }
+            Rectangle {
+                visible: !boardEnabled
+                anchors.fill: thumbnailImage
+                radius: 30
+                opacity: 0.5
+                color: "black"
             }
         }
     }
@@ -31,10 +39,12 @@ Rectangle {
         ListElement {
             tileComponent: "Lada.qml"
             thumbnail: "lada_thumbnail.png"
+            boardEnabled: true
         }
         ListElement {
-            tileComponent: "Lada.qml"
-            thumbnail: "lada_thumbnail.png"
+            tileComponent: "BuyFullVersion.qml"
+            thumbnail: "buy_full_version_thumbnail.png"
+            boardEnabled: true
         }
         ListElement {
             tileComponent: "Lada.qml"
