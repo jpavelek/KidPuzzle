@@ -37,4 +37,5 @@ include(qmlapplicationviewer/qmlapplicationviewer.pri)
 qtcAddDeployment()
 
 OTHER_FILES += \
-    Mushrooms.qml
+    Mushrooms.qml \
+    Lada.qml

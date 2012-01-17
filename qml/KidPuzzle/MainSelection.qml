@@ -11,11 +11,10 @@ Rectangle {
 
     Component {
         id: tilesGridDelegate
-        Rectangle {
-            radius: 16
+        Image {
             width: UI.delegateWidth
             height: UI.delegateHeigh
-            color: "yellow"
+            source: thumbnail
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
@@ -30,40 +29,36 @@ Rectangle {
     ListModel {
         id: testItems
         ListElement {
-            tileComponent: "Mushrooms.qml"
+            tileComponent: "Lada.qml"
+            thumbnail: "lada_thumbnail.png"
         }
         ListElement {
-            tileComponent: "Mushrooms.qml"
+            tileComponent: "Lada.qml"
+            thumbnail: "lada_thumbnail.png"
         }
         ListElement {
-            tileComponent: "Mushrooms.qml"
+            tileComponent: "Lada.qml"
+            thumbnail: "lada_thumbnail.png"
         }
         ListElement {
-            tileComponent: "Mushrooms.qml"
+            tileComponent: "Lada.qml"
+            thumbnail: "lada_thumbnail.png"
         }
         ListElement {
-            tileComponent: "Mushrooms.qml"
+            tileComponent: "Lada.qml"
+            thumbnail: "lada_thumbnail.png"
         }
         ListElement {
-            tileComponent: "Mushrooms.qml"
+            tileComponent: "Lada.qml"
+            thumbnail: "lada_thumbnail.png"
         }
         ListElement {
-            tileComponent: "Mushrooms.qml"
+            tileComponent: "Lada.qml"
+            thumbnail: "lada_thumbnail.png"
         }
         ListElement {
-            tileComponent: "Mushrooms.qml"
-        }
-        ListElement {
-            tileComponent: "Mushrooms.qml"
-        }
-        ListElement {
-            tileComponent: "Mushrooms.qml"
-        }
-        ListElement {
-            tileComponent: "Mushrooms.qml"
-        }
-        ListElement {
-            tileComponent: "Mushrooms.qml"
+            tileComponent: "Lada.qml"
+            thumbnail: "lada_thumbnail.png"
         }
     }
 
