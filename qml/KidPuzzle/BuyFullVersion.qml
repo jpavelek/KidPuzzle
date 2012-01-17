@@ -6,4 +6,21 @@ Rectangle {
     width: UI.screenWidth
     height: UI.screenHeight
     color: "black"
+
+    Image {
+        id: returnArrow
+        source: "back.png"
+        anchors { right: parent.right; top: parent.top }
+        MouseArea {
+            anchors.fill: parent
+            onClicked: { tileLoader.source = "MainSelection.qml" }
+        }
+    }
+    Text {
+        text: "Buy full version"
+        font.pixelSize: 48
+        font.bold: true
+        color: "white"
+        anchors.centerIn: parent
+    }
 }
