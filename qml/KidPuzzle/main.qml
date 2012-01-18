@@ -1,5 +1,6 @@
 import QtQuick 1.0
 import "UI_page.js" as UI
+import QtMultimediaKit 1.1
 
 Rectangle {
     width: UI.screenWidth
@@ -9,5 +10,10 @@ Rectangle {
     Loader {
         id: tileLoader
         source: "MainSelection.qml"
+    }
+
+    SoundEffect {
+        id: baloonPop
+        source: "pop.wav"; muted: false; volume: 0.5
     }
 }

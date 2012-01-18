@@ -10,11 +10,6 @@ Image {
 
     Component.onCompleted:  { speed = Math.random() + 1 }
 
-    SoundEffect {
-        id: baloonPop
-        source: "pop.wav"; muted: false; volume: 0.5
-    }
-
     MouseArea {
         anchors.fill: parent
         onPressed: {
