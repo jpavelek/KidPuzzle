@@ -1,6 +1,7 @@
 // import QtQuick 1.0 // to target S60 5th Edition or Maemo 5
 import QtQuick 1.0
 import "UI_page.js" as UI
+import QtMultimediaKit 1.1
 
 Image {
     id: aBit
@@ -20,6 +21,24 @@ Image {
         }
     }
 
+    SoundEffect {
+        id: placeBit
+        source: "message.wav"; muted: false; volume: 1.0
+    }
+    SoundEffect {
+        id: takeBit
+        source: "button-pressed.wav"; muted: false; volume: 1.0
+    }
+    SoundEffect {
+        id: returnBit
+        source: "dialog-error.wav"; muted: false; volume: 0.4
+    }
+    SoundEffect {
+        id: applause
+        source: "TODO.wav"; muted: false; volume: 1.0
+    }
+
+
     Component.onCompleted: {
         width = dockW; height = dockH; x = dockX; y = dockY
         UI.addBit()
@@ -35,19 +54,22 @@ Image {
         onPressed: {
             aBit.width = aBit.sourceSize.width
             aBit.height = aBit.sourceSize.height
+            takeBit.play()
         }
         onReleased: {
             if (closeEnough(aBit.x, aBit.y, aBit.boardX, aBit.boardY)) {
                 free = false
+                placeBit.play()
                 UI.bitDone()
                 aBit.x = boardX
                 aBit.y = boardY
                 drag.target = undefined
                 if (UI.finished()) {
-                    console.log("FINISHED - bring on the baloons")
+                    applause.play()
                     gameover = true
                 }
             } else {
+                returnBit.play()
                 aBit.width = dockW
                 aBit.height = dockH
                 aBit.x = dockX
