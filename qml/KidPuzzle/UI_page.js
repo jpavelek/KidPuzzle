@@ -38,5 +38,5 @@ var threshold = 100;
 var bubbleUpdateInterval = 20;
 var nrBaloons = 15;
 var seedTime = 10000;
-var nrColors = 3;
 var baloonColors = ["baloon_red.png", "baloon_green.png", "baloon_yellow.png", "baloon_blue.png"];
+var nrColors = 4;

@@ -57,23 +57,25 @@ Image {
             takeBit.play()
         }
         onReleased: {
-            if (closeEnough(aBit.x, aBit.y, aBit.boardX, aBit.boardY)) {
-                free = false
-                placeBit.play()
-                UI.bitDone()
-                aBit.x = boardX
-                aBit.y = boardY
-                drag.target = undefined
-                if (UI.finished()) {
-                    applause.play()
-                    gameover = true
+            if (free) {
+                if (closeEnough(aBit.x, aBit.y, aBit.boardX, aBit.boardY)) {
+                    free = false
+                    placeBit.play()
+                    UI.bitDone()
+                    aBit.x = boardX
+                    aBit.y = boardY
+                    drag.target = undefined
+                    if (UI.finished()) {
+                        applause.play()
+                        gameover = true
+                    }
+                } else {
+                    returnBit.play()
+                    aBit.width = dockW
+                    aBit.height = dockH
+                    aBit.x = dockX
+                    aBit.y = dockY
                 }
-            } else {
-                returnBit.play()
-                aBit.width = dockW
-                aBit.height = dockH
-                aBit.x = dockX
-                aBit.y = dockY
             }
         }
     }
