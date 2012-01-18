@@ -1,16 +1,23 @@
 // import QtQuick 1.0 // to target S60 5th Edition or Maemo 5
 import QtQuick 1.0
 import "UI_page.js" as UI
+import QtMultimediaKit 1.1
 
 Image {
     id: baloon
     property int timeout
+
+    SoundEffect {
+        id: baloonPop
+        source: "pop.wav"; muted: false; volume: 1.0
+    }
+
     MouseArea {
         anchors.fill: parent
         onPressed: {
             baloon.visible = false
             timer.running = false
-            console.log("POP a ball")
+            baloonPop.play()
         }
     }
     Timer {
