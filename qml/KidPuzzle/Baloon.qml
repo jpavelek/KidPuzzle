@@ -6,10 +6,13 @@ import QtMultimediaKit 1.1
 Image {
     id: baloon
     property int timeout
+    property int speed
+
+    Component.onCompleted:  { speed = Math.random() + 1 }
 
     SoundEffect {
         id: baloonPop
-        source: "pop.wav"; muted: false; volume: 1.0
+        source: "pop.wav"; muted: false; volume: 0.5
     }
 
     MouseArea {
@@ -34,7 +37,7 @@ Image {
         running: false
         repeat: true
         onTriggered: {
-            baloon.y = baloon.y - 1
+            baloon.y = baloon.y - speed
         }
     }
 }
