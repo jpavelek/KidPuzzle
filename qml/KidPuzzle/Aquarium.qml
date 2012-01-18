@@ -3,7 +3,7 @@ import "UI_page.js" as UI
 
 Image {
     id: page
-    width: UI.screenWidth
+    width: 800// UI.screenWidth
     height: UI.screenHeight
     source: "aquarium_board.png"
     opacity: 0.0

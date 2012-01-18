@@ -23,7 +23,7 @@ function finished() {
 }
 
 //Common
-var screenWidth = 800;
+var screenWidth = 854;
 var screenHeight = 480;
 
 //main grid
@@ -39,4 +39,4 @@ var bubbleUpdateInterval = 20;
 var nrBaloons = 15;
 var seedTime = 10000;
 var nrColors = 3;
-var baloonColors = ["mushrooms_baloon_red.png", "mushrooms_baloon_green.png", "mushrooms_baloon_yellow.png"];
+var baloonColors = ["baloon_red.png", "baloon_green.png", "baloon_yellow.png", "baloon_blue.png"];
