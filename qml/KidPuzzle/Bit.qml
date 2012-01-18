@@ -35,7 +35,7 @@ Image {
     }
     SoundEffect {
         id: applause
-        source: "TODO.wav"; muted: false; volume: 1.0
+        source: "app-6.wav"; muted: false; volume: 1.0
     }
 
 
