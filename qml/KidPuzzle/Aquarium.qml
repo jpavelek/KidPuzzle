@@ -11,23 +11,23 @@ Image {
 
     Bit {
         source: "aquarium_1.png"
-        dockX: 25; dockY: 30; boardX: 177; boardY: 480-458; dockW: 73; dockH: 96
+        dockX: 10; dockY:10; boardX: 177; boardY: 480-458; dockW: 116; dockH: 80
     }
     Bit {
         source: "aquarium_2.png"
-        dockX: 45; dockY: 130; boardX: 153; boardY: 480-245; dockW: 33; dockH: 96
+        dockX: 10; dockY: 130; boardX: 153; boardY: 480-245; dockW: 100; dockH: 33
     }
     Bit {
         source: "aquarium_3.png"
-        dockX: 20; dockY: 230; boardX: 364; boardY: 480-170; dockW: 77; dockH: 96
+        dockX: 20; dockY: 210; boardX: 364; boardY: 480-170; dockW: 79; dockH: 80
     }
     Bit {
         source: "aquarium_4.png"
-        dockX: 33; dockY: 330; boardX: 652; boardY: 480-222; dockW: 51; dockH: 96
+        dockX: 20; dockY: 310; boardX: 652; boardY: 480-222; dockW: 89; dockH: 80
     }
     Bit {
         source: "aquarium_5.png"
-        dockX: 33; dockY: 330; boardX: 493; boardY: 480-427; dockW: 51; dockH: 96
+        dockX: 45; dockY: 410; boardX: 493; boardY: 480-427; dockW: 44; dockH: 80
     }
 
     Image {
