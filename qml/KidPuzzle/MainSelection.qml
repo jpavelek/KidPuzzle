@@ -31,6 +31,14 @@ Rectangle {
                 opacity: 0.5
                 color: "black"
             }
+            Text {
+                visible: (buyTile == undefined) ? false : true
+                text: qsTr("Upgrade for $1.59")
+                anchors { horizontalCenter: parent.horizontalCenter; verticalCenter: parent.verticalCenter }
+                font.pixelSize: 32
+                color: "black"
+                font.bold: true
+            }
         }
     }
 
@@ -45,10 +53,12 @@ Rectangle {
             tileComponent: "BuyFullVersion.qml"
             thumbnail: "buy_full_version_thumbnail.png"
             boardEnabled: true
+            buyTile: true
         }
         ListElement {
-            tileComponent: "Lada.qml"
-            thumbnail: "lada_thumbnail.png"
+            tileComponent: "Aquarium.qml"
+            thumbnail: "aquarium_thumbnail.png"
+            boardEnabled: true
         }
         ListElement {
             tileComponent: "Lada.qml"

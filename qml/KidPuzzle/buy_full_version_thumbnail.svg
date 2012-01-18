@@ -82,7 +82,7 @@
        x2="362.77734"
        y2="514.42566"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.3375167,0,0,1.3375167,-138.78894,-169.31958)" />
+       gradientTransform="matrix(1.3375167,0,0,1.3375167,-139.68692,-215.69713)" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -114,7 +114,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -146,7 +146,7 @@
        x="257.65195"
        style="font-size:36px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter5894);font-family:Impact;-inkscape-font-specification:Impact Bold"
        xml:space="preserve"
-       transform="matrix(1.3662051,0,0,1.3094307,-103.54487,-164.56304)"><tspan
+       transform="matrix(1.3662051,0,0,1.3094307,-104.00349,-207.21499)"><tspan
          y="545.31354"
          x="257.65195"
          id="tspan5880"
@@ -154,15 +154,15 @@
     <text
        xml:space="preserve"
        style="font-size:48.15060043px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:url(#linearGradient5904);fill-opacity:1;stroke:none;font-family:Impact;-inkscape-font-specification:Impact Bold"
-       x="243.24319"
-       y="561.27325"
+       x="242.34521"
+       y="514.89575"
        id="text5874"
        sodipodi:linespacing="125%"
        transform="scale(1.021449,0.9790014)"><tspan
          sodipodi:role="line"
          id="tspan5876"
-         x="243.24319"
-         y="561.27325"
+         x="242.34521"
+         y="514.89575"
          style="fill:url(#linearGradient5904);fill-opacity:1">FULL VERSION</tspan></text>
   </g>
 </svg>

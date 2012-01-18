@@ -23,7 +23,7 @@ function finished() {
 }
 
 //Common
-var screenWidth = 854;
+var screenWidth = 800;
 var screenHeight = 480;
 
 //main grid
