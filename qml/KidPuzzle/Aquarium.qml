@@ -4,30 +4,30 @@ import "UI_page.js" as UI
 Image {
     id: page
     width: 800// UI.screenWidth
-    height: 480//UI.screenHeight
+    height: UI.screenHeight
     source: "aquarium_board.png"
     opacity: 0.0
     property bool gameover: false
 
     Bit {
         source: "aquarium_1.png"
-        dockX: 10; dockY:10; boardX: 177; boardY: 480-458; dockW: 116; dockH: 80
+        dockX: 10; dockY:10; boardX: 177; boardY: UI.screenHeight-458; dockW: 116; dockH: 80
     }
     Bit {
         source: "aquarium_2.png"
-        dockX: 10; dockY: 130; boardX: 153; boardY: 480-245; dockW: 100; dockH: 33
+        dockX: 10; dockY: 130; boardX: 153; boardY: UI.screenHeight-245; dockW: 100; dockH: 33
     }
     Bit {
         source: "aquarium_3.png"
-        dockX: 20; dockY: 210; boardX: 364; boardY: 480-170; dockW: 79; dockH: 80
+        dockX: 20; dockY: 210; boardX: 364; boardY: UI.screenHeight-170; dockW: 79; dockH: 80
     }
     Bit {
         source: "aquarium_4.png"
-        dockX: 20; dockY: 310; boardX: 652; boardY: 480-222; dockW: 89; dockH: 80
+        dockX: 20; dockY: 310; boardX: 652; boardY: UI.screenHeight-222; dockW: 89; dockH: 80
     }
     Bit {
         source: "aquarium_5.png"
-        dockX: 45; dockY: 410; boardX: 493; boardY: 480-427; dockW: 44; dockH: 80
+        dockX: 45; dockY: 410; boardX: 493; boardY: UI.screenHeight-427; dockW: 44; dockH: 80
     }
 
     Image {

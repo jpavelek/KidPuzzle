@@ -11,19 +11,19 @@ Image {
 
     Bit {
         source: "lada_1.png"
-        dockX: 25; dockY: 30; boardX: 157; boardY: 480-292; dockW: 73; dockH: 96
+        dockX: 25; dockY: 30; boardX: 157; boardY: UI.screenHeight-292; dockW: 73; dockH: 96
     }
     Bit {
         source: "lada_2.png"
-        dockX: 45; dockY: 130; boardX: 351; boardY: 480-308; dockW: 33; dockH: 96
+        dockX: 45; dockY: 130; boardX: 351; boardY: UI.screenHeight-308; dockW: 33; dockH: 96
     }
     Bit {
         source: "lada_3.png"
-        dockX: 20; dockY: 230; boardX: 440; boardY: 480-465; dockW: 77; dockH: 96
+        dockX: 20; dockY: 230; boardX: 440; boardY: UI.screenHeight-465; dockW: 77; dockH: 96
     }
     Bit {
         source: "lada_4.png"
-        dockX: 33; dockY: 330; boardX: 672; boardY: 480-290; dockW: 51; dockH: 96
+        dockX: 33; dockY: 330; boardX: 672; boardY: UI.screenHeight-290; dockW: 51; dockH: 96
     }
 
     Image {
