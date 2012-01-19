@@ -8,7 +8,7 @@ Image {
     property int timeout
     property int speed
 
-    Component.onCompleted:  { speed = Math.random() + 1 }
+    Component.onCompleted:  { speed = Math.random()*2 + 2 }
 
     MouseArea {
         anchors.fill: parent

@@ -61,8 +61,9 @@ Rectangle {
             boardEnabled: true
         }
         ListElement {
-            tileComponent: "Lada.qml"
-            thumbnail: "lada_thumbnail.png"
+            tileComponent: "Aquarium2.qml"
+            thumbnail: "aquarium2_thumbnail.png"
+            boardEnabled: true
         }
         ListElement {
             tileComponent: "Lada.qml"
@@ -96,9 +97,18 @@ Rectangle {
     Rectangle {
         id: addBar
         color: "red"
-        opacity: 0.5
-        height: 60
+        height: 50
         anchors { left: parent.left; right: parent.right; bottom: parent.bottom }
+        Row {
+            Image {
+                id: ad1
+                source: "Banner-320-50.png"
+            }
+            Image {
+                id: ad2
+                source: "Banner-320-50.png"
+            }
+        }
     }
 
     Behavior on opacity {  PropertyAnimation { target: mainPage; property: "opacity"; duration: 300; easing.type: Easing.InOutQuad  } }
