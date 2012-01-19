@@ -31,7 +31,7 @@ Image {
     }
     Bit {
         source: "fish_6.png"
-        dockX: 10; dockY: 370; boardX: 173; boardY: UI.screenHeight-423; dockW: 94; dockH: 70
+        dockX: 10; dockY: 370; boardX: 174; boardY: UI.screenHeight-424; dockW: 94; dockH: 70
     }
     Image {
         id: returnArrow
