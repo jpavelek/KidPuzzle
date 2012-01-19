@@ -71,8 +71,9 @@ Rectangle {
             boardEnabled: true
         }
         ListElement {
-            tileComponent: "Lada.qml"
-            thumbnail: "lada_thumbnail.png"
+            tileComponent: "BoardRedfish.qml"
+            thumbnail: "redfish_thumbnail.png"
+            boardEnabled: true
         }
         ListElement {
             tileComponent: "Lada.qml"
