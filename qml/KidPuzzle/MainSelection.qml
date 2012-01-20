@@ -1,6 +1,6 @@
 // import QtQuick 1.0 // to target S60 5th Edition or Maemo 5
 import QtQuick 1.0
-import "UI_page.js" as UI
+import "UI.js" as UI
 
 Rectangle {
     id: mainPage
@@ -45,8 +45,8 @@ Rectangle {
     ListModel {
         id: testItems
         ListElement {
-            tileComponent: "Lada.qml"
-            thumbnail: "lada_thumbnail.png"
+            tileComponent: "BoardAquarium2.qml"
+            thumbnail: "aquarium2_thumbnail.png"
             boardEnabled: true
         }
         ListElement {
@@ -54,16 +54,6 @@ Rectangle {
             thumbnail: "buy_full_version_thumbnail.png"
             boardEnabled: true
             buyTile: true
-        }
-        ListElement {
-            tileComponent: "Aquarium.qml"
-            thumbnail: "aquarium_thumbnail.png"
-            boardEnabled: true
-        }
-        ListElement {
-            tileComponent: "Aquarium2.qml"
-            thumbnail: "aquarium2_thumbnail.png"
-            boardEnabled: true
         }
         ListElement {
             tileComponent: "BoardFish.qml"
@@ -76,8 +66,14 @@ Rectangle {
             boardEnabled: true
         }
         ListElement {
+            tileComponent: "BoardAquarium.qml"
+            thumbnail: "aquarium_thumbnail.png"
+            boardEnabled: true
+        }
+        ListElement {
             tileComponent: "Lada.qml"
             thumbnail: "lada_thumbnail.png"
+            boardEnabled: true
         }
         ListElement {
             tileComponent: "Lada.qml"

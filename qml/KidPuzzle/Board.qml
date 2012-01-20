@@ -1,41 +1,36 @@
 import QtQuick 1.0
 import "UI.js" as UI
 
-Image {
-    id: page
-    width: 800// UI.screenWidth
+Rectangle {
+    width: UI.screenWidth
     height: UI.screenHeight
-    source: "aquarium2_board.png"
-    opacity: 0.0
+    color: "transparent"
+    property alias source : page.source
     property bool gameover: false
 
-    Bit {
-        source: "aquarium_1.png"
-        dockX: 10; dockY:10; boardX: 571; boardY: UI.screenHeight-316; dockW: 116; dockH: 80
+    Rectangle {
+        id: leftSpacer
+        color: "black"
+        anchors { left:parent.left; top: parent.top}
+        width: UI.leftMargin
+        height: UI.screenHeight
     }
-    Bit {
-        source: "aquarium_2.png"
-        dockX: 10; dockY: 130; boardX: 386; boardY: UI.screenHeight-437; dockW: 100; dockH: 33
-    }
-    Bit {
-        source: "aquarium_3.png"
-        dockX: 20; dockY: 210; boardX: 459; boardY: UI.screenHeight-181; dockW: 79; dockH: 80
-    }
-    Bit {
-        source: "aquarium_4.png"
-        dockX: 20; dockY: 310; boardX: 202; boardY: UI.screenHeight-427; dockW: 89; dockH: 80
-    }
-    Bit {
-        source: "aquarium_5.png"
-        dockX: 45; dockY: 410; boardX: 229; boardY: UI.screenHeight-248; dockW: 44; dockH: 80
+
+    Image {
+        id: page
+        anchors {left: leftSpacer.right; top: parent.top}
+        height: UI.screenHeight
+        width: UI.boardWidth
+        opacity: 0.0
     }
 
     Image {
         id: returnArrow
         source: "back.png"
         anchors { right: parent.right; top: parent.top }
+        z: 99
         MouseArea {
-            anchors.fill: parent
+            anchors.fill: returnArrow
             onClicked: { tileLoader.source = "MainSelection.qml" }
         }
     }
@@ -48,6 +43,7 @@ Image {
 
     Loader {
         id: loader
+        z: 100
     }
 
     Component {

@@ -1,5 +1,5 @@
 import QtQuick 1.0
-import "UI_page.js" as UI
+import "UI.js" as UI
 import QtMultimediaKit 1.1
 
 Rectangle {
