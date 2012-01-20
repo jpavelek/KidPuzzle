@@ -52,12 +52,16 @@ Image {
         anchors.fill: parent
         drag.target: aBit
         onPressed: {
-            aBit.width = aBit.sourceSize.width
-            aBit.height = aBit.sourceSize.height
-            takeBit.play()
+            if (free) {
+                aBit.width = aBit.sourceSize.width
+                aBit.height = aBit.sourceSize.height
+                takeBit.play()
+                aBit.z = aBit.z + 100
+            }
         }
         onReleased: {
             if (free) {
+                aBit.z = aBit.z - 100
                 if (closeEnough(aBit.x, aBit.y, aBit.boardX, aBit.boardY)) {
                     free = false
                     placeBit.play()
