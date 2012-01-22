@@ -29,7 +29,6 @@ Board {
         dockX: UI.leftMargin + 10; dockY: 370; boardX: UI.leftMargin + 174; boardY: UI.screenHeight-424; dockW: 94; dockH: 70
         Component.onCompleted: console.log("BIT " + z)
     }
-    Component.onCompleted: returnArrow.z = 99
 }
 
 

@@ -23,7 +23,6 @@ Board {
         source: "aquarium_5.png"
         dockX: UI.leftMargin + 45; dockY: 410; boardX: UI.leftMargin + 493; boardY: UI.screenHeight-427; dockW: 44; dockH: 80
     }
-    Component.onCompleted: returnArrow.z = 99
 }
 
 

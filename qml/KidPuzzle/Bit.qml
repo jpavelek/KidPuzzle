@@ -47,6 +47,15 @@ Image {
     Behavior on y { PropertyAnimation { duration: 250; easing.type: Easing.InOutQuad } }
     Behavior on width { PropertyAnimation { duration: 250; easing.type: Easing.InOutQuad } }
     Behavior on height { PropertyAnimation { duration: 250; easing.type: Easing.InOutQuad } }
+    SequentialAnimation {
+        id: blinkBit
+        PropertyAnimation {
+            target: aBit; property: "opacity"; from: 1.0; to: 0.3; duration: 100; easing.type: Easing.InOutQuad
+        }
+        PropertyAnimation {
+            target: aBit; property: "opacity"; from: 0.3; to: 1.0; duration: 150; easing.type: Easing.InOutQuad
+        }
+    }
 
     MouseArea {
         anchors.fill: parent
@@ -69,6 +78,7 @@ Image {
                     aBit.x = boardX
                     aBit.y = boardY
                     drag.target = undefined
+                    blinkBit.running = true
                     if (UI.finished()) {
                         applause.play()
                         gameover = true

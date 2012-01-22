@@ -24,5 +24,4 @@ Board {
         source: "redfish_fin.png"
         dockX: UI.leftMargin + 10; dockY: 410; boardX: UI.leftMargin + 430; boardY: UI.screenHeight-219; dockW: 100; dockH: 40
     }
-    Component.onCompleted: returnArrow.z = 99
 }

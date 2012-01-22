@@ -21,7 +21,6 @@ Rectangle {
                 onClicked: {
                     gridTiles.currentIndex = index
                     tileLoader.source = tileComponent
-                    console.log("Start " + tileComponent)
                 }
             }
             Rectangle {
@@ -74,6 +73,14 @@ Rectangle {
             tileComponent: "Lada.qml"
             thumbnail: "lada_thumbnail.png"
             boardEnabled: true
+        }
+        ListElement {
+            tileComponent: "Lada.qml"
+            thumbnail: "lada_thumbnail.png"
+        }
+        ListElement {
+            tileComponent: "Lada.qml"
+            thumbnail: "lada_thumbnail.png"
         }
         ListElement {
             tileComponent: "Lada.qml"
