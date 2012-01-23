@@ -70,6 +70,11 @@ Rectangle {
             boardEnabled: true
         }
         ListElement {
+            tileComponent: "BoardBBFish.qml"
+            thumbnail: "bbfish_thumbnail.png"
+            boardEnabled: true
+        }
+        ListElement {
             tileComponent: "Lada.qml"
             thumbnail: "lada_thumbnail.png"
             boardEnabled: true

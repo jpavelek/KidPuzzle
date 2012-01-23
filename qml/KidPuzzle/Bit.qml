@@ -73,12 +73,12 @@ Image {
                 aBit.z = aBit.z - 100
                 if (closeEnough(aBit.x, aBit.y, aBit.boardX, aBit.boardY)) {
                     free = false
+                    blinkBit.running = true
                     placeBit.play()
                     UI.bitDone()
                     aBit.x = boardX
                     aBit.y = boardY
                     drag.target = undefined
-                    blinkBit.running = true
                     if (UI.finished()) {
                         applause.play()
                         gameover = true

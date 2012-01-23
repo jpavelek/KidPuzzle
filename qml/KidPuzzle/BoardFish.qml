@@ -27,7 +27,6 @@ Board {
     Bit {
         source: "fish_6.png"
         dockX: UI.leftMargin + 10; dockY: 370; boardX: UI.leftMargin + 174; boardY: UI.screenHeight-424; dockW: 94; dockH: 70
-        Component.onCompleted: console.log("BIT " + z)
     }
 }
 
