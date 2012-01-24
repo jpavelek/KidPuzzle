@@ -2,11 +2,11 @@
 import QtQuick 1.0
 import "UI.js" as UI
 
-Rectangle {
+Image {
     id: mainPage
     width: UI.screenWidth
     height: UI.screenHeight
-    color: "gray"
+    source: "background.png"
     opacity: 0.0
 
     Component {
@@ -102,23 +102,6 @@ Rectangle {
         flow: GridView.TopToBottom
         delegate: tilesGridDelegate
         anchors { fill: parent; topMargin: 20; bottomMargin: 20; leftMargin: 20; rightMargin: 20 }
-    }
-
-    Rectangle {
-        id: addBar
-        color: "red"
-        height: 50
-        anchors { left: parent.left; right: parent.right; bottom: parent.bottom }
-        Row {
-            Image {
-                id: ad1
-                source: "Banner-320-50.png"
-            }
-            Image {
-                id: ad2
-                source: "Banner-320-50.png"
-            }
-        }
     }
 
     Behavior on opacity {  PropertyAnimation { target: mainPage; property: "opacity"; duration: 300; easing.type: Easing.InOutQuad  } }
