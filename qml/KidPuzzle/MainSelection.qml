@@ -54,6 +54,11 @@ Image {
             buyTile: true
         }
         ListElement {
+            tileComponent: "BoardPuppy.qml"
+            thumbnail: "puppy_thumbnail.png"
+            boardEnabled: true
+        }
+        ListElement {
             tileComponent: "BoardFish.qml"
             thumbnail: "fish_thumbnail.png"
             boardEnabled: true
@@ -61,11 +66,6 @@ Image {
         ListElement {
             tileComponent: "BoardRedfish.qml"
             thumbnail: "redfish_thumbnail.png"
-            boardEnabled: true
-        }
-        ListElement {
-            tileComponent: "BoardPuppy.qml"
-            thumbnail: "puppy_thumbnail.png"
             boardEnabled: true
         }
         ListElement {
