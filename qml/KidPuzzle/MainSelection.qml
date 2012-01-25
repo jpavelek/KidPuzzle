@@ -1,4 +1,3 @@
-// import QtQuick 1.0 // to target S60 5th Edition or Maemo 5
 import QtQuick 1.0
 import "UI.js" as UI
 
@@ -65,6 +64,11 @@ Image {
             boardEnabled: true
         }
         ListElement {
+            tileComponent: "BoardPuppy.qml"
+            thumbnail: "puppy_thumbnail.png"
+            boardEnabled: true
+        }
+        ListElement {
             tileComponent: "BoardAquarium.qml"
             thumbnail: "aquarium_thumbnail.png"
             boardEnabled: true
@@ -76,16 +80,13 @@ Image {
         }
         ListElement {
             tileComponent: "Lada.qml"
-            thumbnail: "lada_thumbnail.png"
+            thumbnail: "temp_kitten.png"
             boardEnabled: true
         }
         ListElement {
             tileComponent: "Lada.qml"
             thumbnail: "lada_thumbnail.png"
-        }
-        ListElement {
-            tileComponent: "Lada.qml"
-            thumbnail: "lada_thumbnail.png"
+            boardEnabled: true
         }
         ListElement {
             tileComponent: "Lada.qml"
