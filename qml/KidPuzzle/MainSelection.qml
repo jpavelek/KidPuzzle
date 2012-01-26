@@ -69,6 +69,11 @@ Image {
             boardEnabled: true
         }
         ListElement {
+            tileComponent: "BoardKitten.qml"
+            thumbnail: "kitten_thumbnail.png"
+            boardEnabled: true
+        }
+        ListElement {
             tileComponent: "BoardAquarium.qml"
             thumbnail: "aquarium_thumbnail.png"
             boardEnabled: true
@@ -76,11 +81,6 @@ Image {
         ListElement {
             tileComponent: "BoardBBFish.qml"
             thumbnail: "bbfish_thumbnail.png"
-            boardEnabled: true
-        }
-        ListElement {
-            tileComponent: "Lada.qml"
-            thumbnail: "temp_kitten.png"
             boardEnabled: true
         }
         ListElement {

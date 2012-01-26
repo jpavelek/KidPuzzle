@@ -30,12 +30,12 @@ Board {
     }
     Bit {
         source: "puppy_tail.png"
-        dockX: UI.leftMargin + 10; dockY: 360; boardX: UI.leftMargin + 684; boardY: UI.screenHeight - 290; dockW: 114; dockH: 59
+        dockX: UI.leftMargin + 30; dockY: 350; boardX: UI.leftMargin + 684; boardY: UI.screenHeight - 290; dockW: 78; dockH: 40
         z: 4
     }
     Bit {
         source: "puppy_back_leg.png"
-        dockX: UI.leftMargin + 40; dockY: 440; boardX: UI.leftMargin + 495; boardY: UI.screenHeight - 160; dockW: 59; dockH: 35
+        dockX: UI.leftMargin + 40; dockY: 410; boardX: UI.leftMargin + 495; boardY: UI.screenHeight - 160; dockW: 59; dockH: 35
         z: 2
     }
 }
