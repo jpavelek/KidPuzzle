@@ -21,8 +21,9 @@ Rectangle {
         velocity: 40
         velocityDeviation: 15
         ParticleMotionWander {
-            xvariance: 5
-            pace: 100
+            xvariance: 2
+            yvariance: 1
+            pace: 20
         }
     }
 
@@ -48,7 +49,7 @@ Rectangle {
                 color: "black"
             }
             Text {
-                visible: (buyTile == undefined) ? false : true
+                visible: false //(buyTile == undefined) ? false : true
                 text: qsTr("Upgrade for $1.59")
                 anchors { horizontalCenter: parent.horizontalCenter; verticalCenter: parent.verticalCenter }
                 font.pixelSize: 32
@@ -65,12 +66,14 @@ Rectangle {
             thumbnail: "aquarium2_thumbnail.png"
             boardEnabled: true
         }
+        /* not needed for full version
         ListElement {
             tileComponent: "BuyFullVersion.qml"
             thumbnail: "buy_full_version_thumbnail.png"
             boardEnabled: true
             buyTile: true
         }
+        */
         ListElement {
             tileComponent: "BoardPuppy.qml"
             thumbnail: "puppy_thumbnail.png"
@@ -79,11 +82,6 @@ Rectangle {
         ListElement {
             tileComponent: "BoardFish.qml"
             thumbnail: "fish_thumbnail.png"
-            boardEnabled: true
-        }
-        ListElement {
-            tileComponent: "BoardRedfish.qml"
-            thumbnail: "redfish_thumbnail.png"
             boardEnabled: true
         }
         ListElement {
@@ -97,18 +95,19 @@ Rectangle {
             boardEnabled: true
         }
         ListElement {
+            tileComponent: "BoardPets.qml"
+            thumbnail: "pets_thumbnail.png"
+            boardEnabled: true
+        }
+        ListElement {
+            tileComponent: "BoardRedfish.qml"
+            thumbnail: "redfish_thumbnail.png"
+            boardEnabled: true
+        }
+        ListElement {
             tileComponent: "BoardBBFish.qml"
             thumbnail: "bbfish_thumbnail.png"
             boardEnabled: true
-        }
-        ListElement {
-            tileComponent: "Lada.qml"
-            thumbnail: "lada_thumbnail.png"
-            boardEnabled: true
-        }
-        ListElement {
-            tileComponent: "Lada.qml"
-            thumbnail: "lada_thumbnail.png"
         }
     }
 
