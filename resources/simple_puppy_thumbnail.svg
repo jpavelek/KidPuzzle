@@ -5566,37 +5566,6 @@
          offset="1"
          style="stop-color:#ffffff;stop-opacity:0;" />
     </linearGradient>
-    <filter
-       color-interpolation-filters="sRGB"
-       height="1.2591927"
-       y="-0.12959637"
-       width="1.2861354"
-       x="-0.1430677"
-       id="filter43587-2"
-       inkscape:collect="always">
-      <feGaussianBlur
-         id="feGaussianBlur43589-4"
-         stdDeviation="2.5111711"
-         inkscape:collect="always" />
-    </filter>
-    <filter
-       color-interpolation-filters="sRGB"
-       id="filter43551-4"
-       inkscape:collect="always">
-      <feGaussianBlur
-         id="feGaussianBlur43553-7"
-         stdDeviation="1.1166079"
-         inkscape:collect="always" />
-    </filter>
-    <filter
-       color-interpolation-filters="sRGB"
-       id="filter43547-2"
-       inkscape:collect="always">
-      <feGaussianBlur
-         id="feGaussianBlur43549-8"
-         stdDeviation="1.1166079"
-         inkscape:collect="always" />
-    </filter>
     <linearGradient
        id="linearGradient43098-5">
       <stop
@@ -6174,14 +6143,6 @@
          offset="1"
          id="stop6132" />
     </linearGradient>
-    <filter
-       id="filter13540-1"
-       inkscape:collect="always">
-      <feGaussianBlur
-         id="feGaussianBlur13542-7"
-         stdDeviation="0.62072635"
-         inkscape:collect="always" />
-    </filter>
     <radialGradient
        r="65.561883"
        fy="95.952057"
@@ -7475,15 +7436,15 @@
        r="77.171143" />
     <clipPath
        clipPathUnits="userSpaceOnUse"
-       id="clipPath14330">
+       id="clipPath19160">
       <rect
-         ry="92"
-         y="573.13293"
-         x="0.66342252"
-         height="481.33334"
-         width="823.16296"
-         id="rect14332"
-         style="color:#000000;fill:#ffc445;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.9646073;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+         style="color:#000000;fill:#ffc445;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.9646073;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect19162"
+         width="793.84918"
+         height="464.1925"
+         x="5.5566492"
+         y="581.70331"
+         ry="88.723778" />
     </clipPath>
   </defs>
   <sodipodi:namedview
@@ -7494,8 +7455,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.0155414"
-     inkscape:cx="270.92553"
-     inkscape:cy="-208.36328"
+     inkscape:cx="390.0738"
+     inkscape:cy="224.90315"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -8167,11 +8128,11 @@
     </g>
     <g
        id="g14206"
-       transform="matrix(0.38904811,0,0,0.375,297.58702,899.66378)"
-       clip-path="url(#clipPath14330)"
+       transform="matrix(0.40341415,0,0,0.38884729,421.70713,886.05807)"
+       clip-path="url(#clipPath19160)"
        inkscape:export-filename="/home/jakub/Projects/KidPuzzle/qml/KidPuzzle/simple_puppy_thumbnail.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90">
+       inkscape:export-xdpi="89.750694"
+       inkscape:export-ydpi="89.750694">
       <rect
          y="573.79974"
          x="0.98469615"

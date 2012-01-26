@@ -124,7 +124,7 @@ Rectangle {
         cellHeight: UI.gridCellHeight
         flow: GridView.TopToBottom
         delegate: tilesGridDelegate
-        anchors { fill: parent; topMargin: 20; bottomMargin: 20; leftMargin: 20; rightMargin: 20 }
+        anchors { fill: parent; topMargin: 40; bottomMargin: 20; leftMargin: 20; rightMargin: 20 }
     }
 
     Behavior on opacity {  PropertyAnimation { target: mainPage; property: "opacity"; duration: 300; easing.type: Easing.InOutQuad  } }
