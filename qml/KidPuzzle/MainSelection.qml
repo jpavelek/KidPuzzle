@@ -1,12 +1,30 @@
 import QtQuick 1.0
 import "UI.js" as UI
+import Qt.labs.particles 1.0
 
-Image {
+Rectangle {
     id: mainPage
     width: UI.screenWidth
     height: UI.screenHeight
-    source: "background.png"
+    color: "black"
     opacity: 0.0
+
+    Particles {
+        y: 0
+        width: parent.width
+        source: "snowflake.png"
+        lifeSpan: 15000
+        count: 50
+        emissionRate: 5
+        angle: 70
+        angleDeviation: 36
+        velocity: 40
+        velocityDeviation: 15
+        ParticleMotionWander {
+            xvariance: 5
+            pace: 100
+        }
+    }
 
     Component {
         id: tilesGridDelegate
