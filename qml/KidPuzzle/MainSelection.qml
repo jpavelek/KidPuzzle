@@ -75,8 +75,8 @@ Rectangle {
         }
         */
         ListElement {
-            tileComponent: "BoardPuppy.qml"
-            thumbnail: "puppy_thumbnail.png"
+            tileComponent: "BoardSimplePuppy.qml"
+            thumbnail: "simple_puppy_thumbnail.png"
             boardEnabled: true
         }
         ListElement {
@@ -85,8 +85,8 @@ Rectangle {
             boardEnabled: true
         }
         ListElement {
-            tileComponent: "BoardKitten.qml"
-            thumbnail: "kitten_thumbnail.png"
+            tileComponent: "BoardPets.qml"
+            thumbnail: "pets_thumbnail.png"
             boardEnabled: true
         }
         ListElement {
@@ -95,13 +95,18 @@ Rectangle {
             boardEnabled: true
         }
         ListElement {
-            tileComponent: "BoardPets.qml"
-            thumbnail: "pets_thumbnail.png"
+            tileComponent: "BoardKitten.qml"
+            thumbnail: "kitten_thumbnail.png"
             boardEnabled: true
         }
         ListElement {
             tileComponent: "BoardRedfish.qml"
             thumbnail: "redfish_thumbnail.png"
+            boardEnabled: true
+        }
+        ListElement {
+            tileComponent: "BoardPuppy.qml"
+            thumbnail: "puppy_thumbnail.png"
             boardEnabled: true
         }
         ListElement {
