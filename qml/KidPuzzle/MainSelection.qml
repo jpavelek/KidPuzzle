@@ -6,7 +6,6 @@ Image {
     id: mainPage
     width: UI.screenWidth
     height: UI.screenHeight
-    //color: "black"
     source: (Math.random() > 0.5) ? "bg2.png" : "bg1.png"
     opacity: 0.0
     smooth: true
@@ -51,7 +50,7 @@ Image {
                 color: "black"
             }
             Text {
-                visible: false //(buyTile == undefined) ? false : true
+                visible: false //FULLVERSION (buyTile == undefined) ? false : true
                 text: qsTr("Upgrade for $1.59")
                 anchors { horizontalCenter: parent.horizontalCenter; verticalCenter: parent.verticalCenter }
                 font.pixelSize: 32
@@ -64,11 +63,11 @@ Image {
     ListModel {
         id: testItems
         ListElement {
-            tileComponent: "BoardAquarium2.qml"
-            thumbnail: "aquarium2_thumbnail.png"
+            tileComponent: "BoardRedfish.qml"
+            thumbnail: "redfish_thumbnail.png"
             boardEnabled: true
         }
-        /* not needed for full version
+        /* FULLVERSION
         ListElement {
             tileComponent: "BuyFullVersion.qml"
             thumbnail: "buy_full_version_thumbnail.png"
@@ -92,8 +91,8 @@ Image {
             boardEnabled: true
         }
         ListElement {
-            tileComponent: "BoardAquarium.qml"
-            thumbnail: "aquarium_thumbnail.png"
+            tileComponent: "BoardAquarium2.qml"
+            thumbnail: "aquarium2_thumbnail.png"
             boardEnabled: true
         }
         ListElement {
@@ -102,8 +101,8 @@ Image {
             boardEnabled: true
         }
         ListElement {
-            tileComponent: "BoardRedfish.qml"
-            thumbnail: "redfish_thumbnail.png"
+            tileComponent: "BoardAquarium.qml"
+            thumbnail: "aquarium_thumbnail.png"
             boardEnabled: true
         }
         ListElement {
