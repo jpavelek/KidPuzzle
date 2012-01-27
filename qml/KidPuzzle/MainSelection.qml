@@ -2,13 +2,15 @@ import QtQuick 1.0
 import "UI.js" as UI
 import Qt.labs.particles 1.0
 
-Rectangle {
+Image {
     id: mainPage
     width: UI.screenWidth
     height: UI.screenHeight
-    color: "black"
+    //color: "black"
+    source: (Math.random() > 0.5) ? "bg2.png" : "bg1.png"
     opacity: 0.0
-
+    smooth: true
+/*
     Particles {
         y: 0
         width: parent.width
@@ -26,7 +28,7 @@ Rectangle {
             pace: 20
         }
     }
-
+*/
     Component {
         id: tilesGridDelegate
         Image {
