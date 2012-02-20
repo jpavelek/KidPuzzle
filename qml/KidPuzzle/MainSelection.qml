@@ -115,6 +115,11 @@ Image {
             thumbnail: "bbfish_thumbnail.png"
             boardEnabled: true
         }
+        ListElement {
+            tileComponent: "BoardButterfly.qml"
+            thumbnail: "butterfly_thumbnail.png"
+            boardEnabled: true
+        }
     }
 
 
