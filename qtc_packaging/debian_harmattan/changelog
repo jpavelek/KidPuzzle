@@ -1,3 +1,9 @@
+kidpuzzle (1.1.0) unstable; urgency=low
+
+  * New level added - Butterfly
+
+ -- J Pavelek <jpavelek@live.com>  Mon, 20 Feb 2012 12:18:26 +0100
+
 kidpuzzle (0.0.1) unstable; urgency=low
 
   * Initial Release.
