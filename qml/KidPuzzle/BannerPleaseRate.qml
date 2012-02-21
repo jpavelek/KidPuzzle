@@ -85,6 +85,5 @@ Rectangle {
 
     PropertyAnimation { id: showAnimation; target: page; property: "opacity"; to: 1; duration: 300; easing.type: Easing.InOutQuad }
 
-    //Component.onCompleted: { if (settingsObj.wasReviewed()) tileLoader.source = "BoardButterfly.qml"; else showAnimation.running = true; }
-    Component.onCompleted: {showAnimation.running = true;}
+    Component.onCompleted: { if (settingsObj.wasReviewed()) tileLoader.source = "BoardButterfly.qml"; else showAnimation.running = true; }
 }
