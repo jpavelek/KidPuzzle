@@ -2,7 +2,7 @@ import QtQuick 1.0
 import "UI.js" as UI
 
 Board {
-    source: "aquarium_board.png"
+    source: "aquarium_board.jpg"
     Bit {
         source: "aquarium_1.png"
         dockX: UI.leftMargin + 10; dockY:10; boardX: UI.leftMargin + 177; boardY: UI.screenHeight-458; dockW: 116; dockH: 80

@@ -2,7 +2,7 @@ import QtQuick 1.0
 import "UI.js" as UI
 
 Board {
-    source: "fish_board.png"
+    source: "fish_board.jpg"
 
     Bit {
         source: "fish_1.png"

@@ -116,7 +116,7 @@ Image {
             boardEnabled: true
         }
         ListElement {
-            tileComponent: "BoardButterfly.qml"
+            tileComponent: "BannerPleaseRate.qml" //"BoardButterfly.qml"
             thumbnail: "butterfly_thumbnail.png"
             boardEnabled: true
         }
