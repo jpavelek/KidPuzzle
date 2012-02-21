@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/translations">
+        <file>KidPuzzle_cs.qm</file>
+        <file>KidPuzzle_es.qm</file>
+        <file>KidPuzzle_ru.qm</file>
+    </qresource>
+</RCC>

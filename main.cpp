@@ -8,12 +8,11 @@
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
     QScopedPointer<QApplication> app(createApplication(argc, argv));
-    QString locale = QLocale::system().name();
+    QString locale = QString("KidPuzzle_") + QLocale::system().name() + QString(".qm");
     QTranslator translator;
+
     if (translator.load(locale, ":/translations")) {
         app->installTranslator(&translator);
-    } else {
-        qDebug() << "Could not load translations";
     }
 
     QmlApplicationViewer viewer;
