@@ -5,7 +5,7 @@
     <name>BannerPleaseRate</name>
     <message>
         <source>Would you kindly rate this game?</source>
-        <translation type="unfinished">Sería tan amable de puntuar este juego?</translation>
+        <translation type="unfinished">¿Sería tan amable de puntuar este juego?</translation>
     </message>
     <message>
         <source>Yes</source>
