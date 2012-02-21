@@ -83,16 +83,8 @@ Rectangle {
         }
     }
 
-    Text {
-        text: settingsObj.wasReviewed() ? "Review made" : "No Rreview"
-        font.bold: true
-        font.family: "sans-serif"
-        font.pixelSize: 32
-        color: "white"
-        x: 10; y: 10
-    }
-
     PropertyAnimation { id: showAnimation; target: page; property: "opacity"; to: 1; duration: 300; easing.type: Easing.InOutQuad }
 
-    Component.onCompleted: { if (settingsObj.wasReviewed()) tileLoader.source = "BoardButterfly.qml"; else showAnimation.running = true; }
+    //Component.onCompleted: { if (settingsObj.wasReviewed()) tileLoader.source = "BoardButterfly.qml"; else showAnimation.running = true; }
+    Component.onCompleted: {showAnimation.running = true;}
 }
