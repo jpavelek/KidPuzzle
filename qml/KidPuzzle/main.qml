@@ -3,6 +3,7 @@ import "UI.js" as UI
 import QtMultimediaKit 1.1
 
 Rectangle {
+    id: theGame
     width: UI.screenWidth
     height: UI.screenHeight
     color: "black"
@@ -16,4 +17,5 @@ Rectangle {
         id: baloonPop
         source: "pop.wav"; muted: false; volume: 0.5
     }
+
 }
