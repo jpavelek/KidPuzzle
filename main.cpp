@@ -1,11 +1,20 @@
 #include <QtGui/QApplication>
 #include <QtDeclarative>
+#include <QTranslator>
+#include <QLocale>
 #include "qmlapplicationviewer.h"
 #include "datamover.h"
 
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
     QScopedPointer<QApplication> app(createApplication(argc, argv));
+    QString locale = QLocale::system().name();
+    QTranslator translator;
+    if (translator.load(locale, ":/translations")) {
+        app->installTranslator(&translator);
+    } else {
+        qDebug() << "Could not load translations";
+    }
 
     QmlApplicationViewer viewer;
     viewer.setOrientation(QmlApplicationViewer::ScreenOrientationAuto);

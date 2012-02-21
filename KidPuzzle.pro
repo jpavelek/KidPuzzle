@@ -43,3 +43,8 @@ OTHER_FILES += \
 
 HEADERS += \
     datamover.h
+
+TRANSLATIONS += \
+    cs.ts \
+    ru.ts \
+    es.ts
